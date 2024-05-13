@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import CategoryDetails from '../Shared/CategoryDetails/CategoryDetails';
 import RandomCourse from '../Shared/Random Course/RandomCourse';
 

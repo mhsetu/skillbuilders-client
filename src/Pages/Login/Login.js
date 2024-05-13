@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { AuthProvider } from '../../Contexts/ContextProvider';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -31,7 +31,7 @@ const Login = () => {
       })
       .catch((eror) => {
         console.error(eror.message);
-        if (eror.message == 'Firebase: Error (auth/invalid-credential).') {
+        if (eror.message === 'Firebase: Error (auth/invalid-credential).') {
           toast.error('Incorrect email or password');
         } else {
           toast.error(eror.message);
@@ -55,7 +55,7 @@ const Login = () => {
       })
       .catch((eror) => {
         console.error(eror);
-        if (eror.message == 'Firebase: Error (auth/invalid-credential).') {
+        if (eror.message === 'Firebase: Error (auth/invalid-credential).') {
           toast.error('Incorrect email or password');
         } else {
           toast.error(eror.message);
@@ -75,7 +75,7 @@ const Login = () => {
       .catch((eror) => {
         console.error(eror);
 
-        if (eror.message == 'Firebase: Error (auth/invalid-credential).') {
+        if (eror.message === 'Firebase: Error (auth/invalid-credential).') {
           toast.error('Incorrect email or password');
         } else {
           toast.error(eror.message);
@@ -169,11 +169,11 @@ const Login = () => {
                   className='input input-bordered'
                   {...register('Password', { required: true })}
                 />
-                <label className='label'>
+                {/* <label className='label'>
                   <a href='#' className='label-text-alt link link-hover'>
                     Forgot password?
                   </a>
-                </label>
+                </label> */}
               </div>
               <div className='form-control mt-6'>
                 {/* <button className='btn btn-primary' type='submit'>

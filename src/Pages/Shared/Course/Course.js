@@ -11,11 +11,9 @@ const Course = () => {
     image_url,
     description,
     instructor,
-    duration,
     level,
     enrolled_students,
     ratings,
-    price,
   } = course;
 
   return (

@@ -117,14 +117,16 @@ const Header = () => {
           {/* End */}
           <div className='flex items-center ml-16'>
             <img
-              className='w-[50px]'
+              className='lg:w-[50px] w-[30px]'
               src={skillicon}
               alt='skill builder'
               altto=''
             />
-            <Link to='/' className='btn btn-ghost text-xl ml-2'>
-              Skill Builder
-            </Link>
+            <div className='font-semibold lg:text-xl md:text-xl text-md ml-2 '>
+              <Link to='/'>
+                <p>Skill Builder</p>
+              </Link>
+            </div>
           </div>
         </div>
         <div className='flex-none gap-2 '>

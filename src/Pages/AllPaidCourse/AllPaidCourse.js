@@ -21,20 +21,22 @@ const AllPaidCourse = () => {
       {/* start */}
       <button>
         <Link to={`/course/${id}`}>
-          <div className='  w-[400px] lg:w-[550px] bg-base-100 shadow-md flex mb-4 rounded-md lg:mx-10 mx-2 text-left items-center'>
+          <div className=' w-[300px] md:w-[400px] lg:w-[550px] bg-base-100 shadow-md flex mb-4 rounded-md lg:mx-10 mx-2 text-left items-center'>
             <div className='avatar m-2'>
-              <div className='w-32 h-32 rounded'>
+              <div className='lg:w-32 lg:h-32 md:w-32 md:h-32 w-20 h-20  rounded'>
                 <img src={image_url} alt='course' />
               </div>
             </div>
             <div className='mx-4'>
               <div className='lg:flex md:flex flex-none justify-between items-center'>
                 <div className='lg:mr-10 mr-4'>
-                  <h1 className='text-xl font-semibold text-wrap '>
+                  <h1 className='lg:text-xl md:text-xl text-medium font-semibold text-wrap '>
                     {title.length > 20 ? title.slice(0, 20) + '...' : title}
                   </h1>
 
-                  <p className='text-[#7b2cbf]'>Updated: {last_updated}</p>
+                  <p className='text-[#7b2cbf] hidden lg:inline-block md:inline-block'>
+                    Updated: {last_updated}
+                  </p>
                 </div>
                 <div className='inline-block lg:flex lg:gap-4 gap-2 items-center'>
                   <div className='lg:flex md:flex hidden'>

@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import CartItems from './CartItems';
 import { AuthProvider } from '../../../Contexts/ContextProvider';
 import toast, { Toaster } from 'react-hot-toast';
@@ -63,11 +63,11 @@ const ShoppingCart = () => {
 
         {cart.length > 0 && (
           <div className=' lg:ml-10 md:ml-10 text-3xl font-semibold lg:mt-10 md:mt-10 mt-4 flex justify-center lg:hidden md:hidden mb-3'>
-            <div className='flex bg-white rounded-md items-center justify-center px-5 min-w-[420px]'>
+            <div className='flex bg-white rounded-md items-center justify-center px-5 w-[320px]'>
               <p className='text-xl font-semibold'>Total Amount: </p>
               {cart && (
-                <p className='text-xl font-semibold text-[#2a9d8f] ml-2'>
-                  $ {total}
+                <p className='text-xl font-semibold text-[#2a9d8f] '>
+                  ${total}
                 </p>
               )}
               <div className='mt-5 ml-4'>

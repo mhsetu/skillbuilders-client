@@ -9,7 +9,7 @@ const Main = () => {
       <div>
         <Header></Header>
       </div>
-      <div className='mx-4 '>
+      <div>
         <div className=' bg-[#d8e2dc] rounded-lg'>
           {/* <div className='bg-red-400'>01</div> */}
           <div>

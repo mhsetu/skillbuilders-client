@@ -75,7 +75,7 @@ const CourseDetails = () => {
     <div>
       {singleData ? (
         <div>
-          <div className=' text-left bg-[#343a40] py-10 lg:px-10 px-4 rounded-xl text-[#f8f9fa] leading-7 shadow-xl'>
+          <div className=' text-left bg-[#343a40] py-10 lg:px-10 px-4 text-[#f8f9fa] leading-7 shadow-xl'>
             <h1 className='text-4xl font-semibold lg:text-nowrap text-wrap mb-4'>
               {title}
             </h1>
@@ -132,8 +132,8 @@ const CourseDetails = () => {
           {/* start */}
 
           <div className='lg:flex md:flex grid items-center  justify-around'>
-            <div className='card w-96 bg-base-100 shadow-md text-left lg:my-10 my-4 lg:ml-5 mx-2'>
-              <div className='card-body'>
+            <div className='rounded-xl max-w-78 lg:w-96 bg-base-100 shadow-md text-left lg:my-10 my-4 lg:ml-5 mx-2'>
+              <div className='lg:px-8 md:px-8 px-10 py-10'>
                 <h2 className='card-title'>What you'll learn</h2>
                 {skills_gain?.map((skill, index) => (
                   <li className='stat-title' key={index}>
@@ -143,8 +143,8 @@ const CourseDetails = () => {
               </div>
             </div>
 
-            <div className='card w-96 bg-base-100 shadow-md text-left lg:my-10 my-4 lg:ml-5 mx-2'>
-              <div className='card-body'>
+            <div className=' rounded-xl max-w-78 lg:w-96 bg-base-100 shadow-md text-left lg:my-10 my-4 lg:ml-5 mx-2'>
+              <div className='lg:px-8 md:px-8 px-10 py-10'>
                 <h2 className='card-title'>Course Includes</h2>
                 {course_includes?.map((course, index) => (
                   <li key={index} className='stat-title'>
@@ -193,8 +193,8 @@ const CourseDetails = () => {
               )}
             </div>
           </div>
-          <div className='lg:mt-10 mt-2 lg:ml-10 mx-4 text-left lg:flex justify-around'>
-            <div className='lg:mb-12 mb-2 '>
+          <div className='lg:mt-10 mt-2  text-left lg:flex justify-around'>
+            <div className='lg:mb-12 mb-2 lg:ml-10 mx-4'>
               <div className='mb-2'>
                 <h1 className='text-2xl font-semibold'>Instructor</h1>
                 <p className='  text-[#7b2cbf]'>{instructor}</p>
@@ -226,10 +226,10 @@ const CourseDetails = () => {
               </p>
             </div>
 
-            <div className='lg:mr-8 mr-2 lg:mb-12 pb-8'>
-              <h1 className='text-2xl mb-4'>Review</h1>
-              <div className='card w-96 bg-base-100 shadow-md'>
-                <div className='card-body'>
+            <div className='lg:mr-8 mr-2  lg:mb-12 pb-8'>
+              <h1 className='text-2xl mb-4 mx-4 lg:mx-10 md:mx-10'>Review</h1>
+              <div className=' lg:w-96 md:w-96 max-w-78 rounded-xl bg-base-100 shadow-md md:ml-5 lg:ml-10 mx-2'>
+                <div className='lg:px-8 md:px-8 px-5 py-10'>
                   <div className='flex card-title text-left'>
                     <PersonIcon className='mr-2 mb-1'></PersonIcon>
                     <p>Guest</p>
