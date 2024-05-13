@@ -1,6 +1,6 @@
 # Skill Builders
 
-Welcome to Skill Builders, your go-to platform for honing your skills and expanding your knowledge! Visit our live site [here](https://www.skillbuilders.com).
+Welcome to Skill Builders, your go-to platform for honing your skills and expanding your knowledge! Visit our live site [here](https://skill-builders.firebaseapp.com/).
 
 ## Features and Functionality:
 
