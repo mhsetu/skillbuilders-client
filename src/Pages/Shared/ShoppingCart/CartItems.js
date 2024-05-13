@@ -59,7 +59,7 @@ const CartItems = ({ items }) => {
                       <PeopleIcon />
                       <p>{enrolled_students}</p>
                     </div>
-                    <gitdiv className='mr-3'>
+                    <div className='mr-3'>
                       <button
                         onClick={removeItem}
                         className='text-4xl bg-[#e76f51] rounded-full p-3 mt-2 hover:bg-[#f28482] inline-block lg:hidden md:hidden'

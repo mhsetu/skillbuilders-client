@@ -1,11 +1,13 @@
-import React, { createContext } from 'react';
+import React, { createContext, useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import Course from '../../Shared/Course/Course';
 import RandomCourse from '../../Shared/Random Course/RandomCourse';
 import Carousels from '../../Shared/Carousel/Carousels';
+import { AuthProvider } from '../../../Contexts/ContextProvider';
 
 export const CourseProvider = createContext();
 const Home = () => {
+  const { user } = useContext(AuthProvider);
   const course = useLoaderData();
   const { courses } = course;
   console.log(courses);
@@ -16,15 +18,19 @@ const Home = () => {
       <div>
         <Carousels></Carousels>
       </div>
-      <div className='mt-5 lg:hidden md:hidden  flex justify-center'>
-        <button className='btn btn-outline btn-primary mr-5'>
-          <Link to='/login'>Login</Link>
-        </button>
+      {user?.uid ? (
+        ''
+      ) : (
+        <div className='mt-5 lg:hidden md:hidden  flex justify-center'>
+          <button className='btn btn-outline btn-primary mr-5'>
+            <Link to='/login'>Login</Link>
+          </button>
 
-        <button className='btn btn-outline btn-error'>
-          <Link to='/register'>SignUp</Link>
-        </button>
-      </div>
+          <button className='btn btn-outline btn-error'>
+            <Link to='/register'>SignUp</Link>
+          </button>
+        </div>
+      )}
       <div className='flex justify-center pb-10'>
         <div className=' sticky h-[400px]  top-[158px] hidden lg:ml-5 md:mx-2 md:inline-block lg:inline-block md:mt-[55px] mt-[70px] md:mb-5'>
           {/* <h1 className='stat-title'>01</h1> */}

@@ -95,10 +95,7 @@ const Login = () => {
           top: 100,
         }}
         toastOptions={{
-          // duration: 4000,
-          // style: {
-          //   background: 'green',
-          // },
+          
           success: {
             duration: 4000,
             style: {

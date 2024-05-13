@@ -48,7 +48,7 @@ const CategoryDetails = () => {
             </p>
             <p className='text-left font-medium'>{level}</p>
             <div className='card-actions justify-end mt-3 mb-5 lg:mb-8'>
-              <Link to={`course/${id}`}>
+              <Link to={`/course/${id}`}>
                 <button className='btn btn-primary'>Enroll Now</button>
               </Link>
             </div>

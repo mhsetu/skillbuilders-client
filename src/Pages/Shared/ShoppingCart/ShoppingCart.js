@@ -43,7 +43,23 @@ const ShoppingCart = () => {
           : 'py-8 min-h-[700px] flex justify-center'
       }`}
     >
-      <Toaster position='top-right' reverseOrder={false} />
+      <Toaster
+        position='top-center'
+        duration='4000'
+        containerStyle={{
+          top: 100,
+        }}
+        toastOptions={{
+          success: {
+            duration: 4000,
+            style: {
+              background: 'green',
+              color: 'white',
+            },
+          },
+        }}
+        reverseOrder={false}
+      />
       <div>
         <h1 className='ml-5 lg:ml-10 md:ml-10 my-8 text-3xl text-center lg:text-left md:text-left font-semibold'>
           Shopping Cart

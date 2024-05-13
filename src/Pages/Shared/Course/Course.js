@@ -22,7 +22,7 @@ const Course = () => {
         <div className='card w-82 bg-base-100 max-h-[500px] shadow-xl md:mx-2 mx-4 my-6 md:my-2 '>
           <figure>
             <img
-              className=' h-[250px] w-[380px]'
+              className='h-[250px] w-[380px]'
               src={image_url}
               alt='Courses'
             />
