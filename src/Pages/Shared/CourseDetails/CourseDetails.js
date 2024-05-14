@@ -182,11 +182,14 @@ const CourseDetails = () => {
               ))}
               {dataLength > 6 ? (
                 <div className='grid justify-center'>
-                  <button onClick={() => setDataLength(6)}>Show Less</button>
+                  <button className='btn btn-primary' onClick={() => setDataLength(6)}>Show Less</button>
                 </div>
               ) : (
-                <div className='grid justify-center'>
-                  <button onClick={() => setDataLength(courseFilter.length)}>
+                <div className='flex justify-center'>
+                  <button
+                    className='btn btn-primary'
+                    onClick={() => setDataLength(courseFilter.length)}
+                  >
                     Show More
                   </button>
                 </div>
@@ -203,7 +206,7 @@ const CourseDetails = () => {
               <div className='flex items-center mb-2'>
                 <div className='avatar mr-2'>
                   <div className='w-24 rounded-full'>
-                    <img src={instructor_img} />
+                    <img src={instructor_img} alt='instructor_img'/>
                   </div>
                 </div>
                 <div>
